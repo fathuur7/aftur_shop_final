@@ -2,10 +2,9 @@
 
 require_once "Product.php";
 
-// [Class] Blueprint untuk pengelola data produk
 class ProductRepository
 {
-    // [Encapsulation] Pembungkusan data. Properti $db di-set private agar tidak bisa diakses/diubah sembarangan dari luar class.
+    // (Encapsulation) Pembungkusan data. Properti $db di-set private agar tidak bisa diakses/diubah sembarangan dari luar class.
     private $db;
 
     // Constructor menerima koneksi database

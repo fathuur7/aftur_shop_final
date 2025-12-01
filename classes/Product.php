@@ -1,8 +1,7 @@
 <?php
 require_once "ProductPrototype.php";
 
-// [Class] Blueprint/kerangka untuk membuat objek Product
-// [Inheritance] Pewarisan sifat. Product (Anak) mewarisi properti & method dari ProductPrototype (Induk)
+// (Inheritance) Pewarisan sifat mewarisi properti & method dari ProductPrototype (Induk)
 class Product extends ProductPrototype
 {
     public $id;
@@ -15,6 +14,7 @@ class Product extends ProductPrototype
         $this->gambar = $gambar;
     }
 
+    // encapsulation (bungkus data id)
     public function setId($id)
     {
         $this->id = $id;
@@ -25,8 +25,7 @@ class Product extends ProductPrototype
         return $this->id;
     }
 
-    // [Polymorphism] Kemampuan method memiliki bentuk berbeda.
-    // Ini adalah Overriding: mendefinisikan ulang method __clone dari parent class
+    // (Polymorphism)Overriding: mendefinisikan ulang method __clone dari parent class
     public function __clone()
     {
         $this->nama .= " (Copy)";

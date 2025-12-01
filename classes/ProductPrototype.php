@@ -1,5 +1,5 @@
 <?php
-// [Abstraction] Penyederhanaan objek. Class ini abstract, jadi tidak bisa di-instansiasi langsung (new ProductPrototype), hanya bisa diturunkan.
+// (Abstraction) Penyederhanaan objek, tidak bisa buat product langsung, hanya bisa diturunkan.
 abstract class ProductPrototype
 {
     public $nama;
